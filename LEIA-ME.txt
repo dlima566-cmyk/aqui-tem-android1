@@ -1,0 +1,27 @@
+AQUI TEM — projeto Android inicial
+
+O que este projeto já tem:
+- Aplicativo Android nativo em Kotlin + Jetpack Compose.
+- Tela inicial com cartões de resumo.
+- Navegação entre Início, Produtos, Clientes e Vendas.
+- Estrutura visual inicial da marca AQUI TEM.
+
+Importante:
+Esta é uma versão inicial de demonstração. Ainda NÃO grava produtos, clientes ou vendas e não é um APK compilado.
+
+Como gerar o APK:
+1. Instale o Android Studio em um computador (Windows, macOS ou Linux).
+2. Extraia o ZIP.
+3. No Android Studio, escolha Open e selecione a pasta AquiTem.
+4. Aguarde o Gradle sincronizar e aceite a instalação dos componentes Android solicitados.
+5. Para gerar um APK de teste, use Build > Build Bundle(s) / APK(s) > Build APK(s).
+6. Quando terminar, o Android Studio mostrará um aviso com o botão para localizar o APK, normalmente em app/build/outputs/apk/debug/app-debug.apk.
+7. Transfira o APK para o celular e abra-o. Se necessário, autorize a instalação de apps desta fonte nas configurações do Android.
+
+Requisitos previstos:
+- Android Studio recente
+- JDK 17 fornecido/configurado pelo Android Studio
+- Conexão à internet na primeira sincronização do Gradle
+
+Próxima etapa de desenvolvimento:
+Implementar persistência local (Room), cadastro real de produtos/clientes, vendas com baixa de estoque e validações.

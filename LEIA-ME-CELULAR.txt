@@ -1,0 +1,20 @@
+AQUI TEM — COMO GERAR O APK USANDO SOMENTE O CELULAR
+
+O ZIP contém o projeto-fonte Android e uma automação do GitHub Actions para tentar compilar o APK na nuvem. Ele ainda NÃO contém um APK pronto.
+
+PASSOS PELO NAVEGADOR DO CELULAR
+1. Abra https://github.com e entre ou crie uma conta.
+2. Crie um repositório novo chamado aqui-tem-android. Para evitar expor o código, escolha Private.
+3. Extraia o ZIP em um aplicativo de arquivos que suporte ZIP. O conteúdo a enviar é tudo que está dentro da pasta aqui-tem-android, inclusive a pasta oculta .github.
+4. No site do GitHub, abra o repositório e use Add file > Upload files. Envie os arquivos e pastas do projeto, mantendo a estrutura de pastas. Se o navegador móvel não permitir enviar a pasta oculta .github, use a opção de site para computador ou envie a pasta .github/workflows/build-apk.yml separadamente mantendo esse caminho.
+5. Confirme em Commit changes para a branch main.
+6. Abra a aba Actions. Se a compilação iniciar automaticamente, toque no processo “Gerar APK do AQUI TEM”. Se não iniciar, selecione o workflow, toque em Run workflow e confirme.
+7. Aguarde terminar. Se aparecer falha, abra o processo e envie uma captura da etapa vermelha para análise.
+8. Se concluir com sucesso, abra o processo e baixe o artefato AQUI-TEM-apk-debug. O download será ZIP; extraia-o para encontrar app-debug.apk.
+9. Toque no APK para instalar. O Android pode pedir autorização para instalar apps dessa origem; só prossiga se você estiver confiante de que baixou o arquivo do seu próprio repositório.
+
+OBSERVAÇÕES
+- A compilação depende de internet e do funcionamento do serviço GitHub Actions.
+- O workflow tenta gerar um APK de depuração, não um APK assinado para publicação na Play Store.
+- Esta versão é uma demonstração visual. Cadastro persistente de produtos/clientes, vendas reais, estoque, relatórios, loja online, QR Code, pagamentos e sincronização ainda precisam ser desenvolvidos.
+- Não coloque senhas, chaves privadas ou dados reais de clientes no repositório.
