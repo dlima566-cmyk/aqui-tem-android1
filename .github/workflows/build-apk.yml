@@ -13,7 +13,7 @@ jobs:
         with:
           distribution: temurin
           java-version: 17
-      - uses:       - name: Aceitar licenças do Android
+      - name: Aceitar licencas do Android
         run: yes | "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --licenses || true
       - uses: gradle/actions/setup-gradle@v4
         with:
