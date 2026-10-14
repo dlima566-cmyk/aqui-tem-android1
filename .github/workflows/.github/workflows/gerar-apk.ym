@@ -1,0 +1,2 @@
+      - name: Preparar pasta www
+        run: mkdir -p www && cp -n index.html www/ || true
